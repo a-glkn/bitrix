@@ -1,0 +1,235 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
++media-breakpoint-down(xl)
+
+
+    
+// ≥1200px
++media-breakpoint-down(lg)
+   .projects-inner 
+        .donate
+            &__text
+                font-size: 18px
+
+
+        .callback-block
+            &__phone
+                font-size: 50px
+
++media-breakpoint-down(lg)
+    .collect
+        &_full
+            .collect
+                &__name
+                    font-size: 40px
+                &__count
+                    margin-top: 32px
+                    height: 24px
+                    border-radius: 24px
+                    span
+                        height: 24px !important
+                        border-radius: 24px !important
+                    div
+                        line-height: 24px
+                        left: 10px
+                        top: 0
+                        font-size: 18px
+
+                &__got
+                    .l
+                        font-size: 24px
+                        span
+                            width: 86px
+                            font-size: 20px
+
+// ≥992px
++media-breakpoint-down(md)
+    .projects-wrapper
+        p
+            font-size: 16px
+            &.lg
+                font-size: 20px
+        .archive-element
+            padding-left: 30px
+            padding-right: 30px
+            &__title
+                font-size: 20px
+
+            &__text
+                font-size: 16px
+
+        .heading
+            &_lg
+                font-size: 42px !important
+
+    .projects-inner 
+        .callback-block
+            padding-right: 0
+            padding-bottom: 220px
+            padding-right: 30px
+            &__phone
+                font-size: 50px
+            &:after
+                top: auto
+                bottom: 0
+                width: 100%
+                height: 170px
+    .donation
+        padding-bottom: 50px
+        .col-text
+            padding-top: 50px
+
+        &_in
+            padding-bottom: 0
+
+    .projects-wrapper
+        .intro-block
+            .warn
+                width: 100%
+                height: auto
+                position: static
+                &:before
+                    display: none
+            &_addr
+                padding-top: 60px
+                display: block
+
+            &_shady
+                p
+                    font-size: 18px
+
+    .collect
+        margin-bottom: 30px
+        &__img
+            margin-bottom: 30px
+
+    .projects-inner_addr
+        padding-top: 40px !important
+
+   
+
+// ≥768px
++media-breakpoint-down(sm)
+    .projects-inner 
+        .donate
+            margin-top: 50px
+        .digit
+            justify-content: flex-start
+            padding-left: 30px
+            padding-right: 30px
+            height: 100px
+            &__num
+                font-size: 60px !important
+            &__text
+                font-size: 20px
+
+    .projects-inner-1 
+        .heading_lg-1
+            margin-top: 0
+    .projects-wrapper
+        .heading
+            &_main
+                font-size: 26px
+        .pt
+            padding-top: 80px
+        .pb
+            padding-bottom: 80px
+
+    .donation
+        &__input
+            margin-bottom: 15px
+        &__amount
+            button
+                padding-left: 20px
+                padding-right: 20px
+                border: 0
+                max-width: auto
+                min-width: auto
+
+        .btn_donate
+            margin-bottom: 15px
+
+    .donation__header-lg
+        font-size: 28px
+        br
+            display: none
+
+    .share
+        display: flex
+        flex-direction: column
+        &__btns
+            margin-top: 20px
+// ≥576px
++media-breakpoint-down(xs)
+    .projects-wrapper
+        .heading
+            &_lg
+                font-size: 36px !important
+            &_main
+                font-size: 22px
+    .projects-inner 
+        .digit
+            &__num
+                font-size: 40px !important
+            &__text
+                font-size: 16px
+
+    .projects-inner 
+        .block
+            p
+                font-size: 18px
+                &.thin
+                    font-size: 16px
+            ul
+                li
+                    font-size: 16px
+        .callback-block
+            padding-left: 20px
+            padding-right: 20px
+            &__phone
+                font-size: 40px
+            &:after
+
+
+    .collect
+        &_full
+            .collect
+                &__name
+                    font-size: 30px
+                &__got
+                    .l
+                        font-size: 20px
+                        span
+                            width: 86px
+                            font-size: 18px
+
+    .share
+        &__title
+            height: auto
+            width: 100%
+            padding-left: 20px
+            padding-right: 20px
+            line-height: 1.166
+            padding-top: 10px
+            padding-bottom: 10px
+
+    .eut-section:not(.eut-fullwidth) .eut-carousel .eut-carousel-buttons .eut-carousel-prev
+        left: -55px
+
+    .eut-section:not(.eut-fullwidth) .eut-carousel .eut-carousel-buttons .eut-carousel-next
+        right: -55px
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

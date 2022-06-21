@@ -1,0 +1,216 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #fff
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	outline: none !important
+	margin: 0
+	padding: 0
+
+ul, ol
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.333
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+
+.header
+	background-color: #fff
+	padding-top: 20px
+	padding-bottom: 20px
+	&__right
+		display: flex
+		justify-content: flex-end
+		*
+			margin: auto 0
+	.logo
+		width: 218px
+		height: 50px
+		background-repeat: no-repeat
+		background-position: center
+		background-image: url(../img/logo.svg)
+		display: inline-block
+
+	.phone
+		margin-right: 40px
+		a
+			font-style: normal
+			font-weight: 600
+			font-size: 24px
+			line-height: 1.208
+			color: #303844
+			text-decoration: none !important
+
+.section
+	padding-top: 80px
+	padding-bottom: 80px
+
+.section_first
+	height: 805px
+	padding-top: 0
+	position: relative
+	.heading-block
+		position: relative
+		z-index: 10
+		&_1
+			margin-top: 339px
+			z-index: 11
+		&_2
+			margin-left: 173px
+		&_3
+			margin-left: 24px
+
+
+	.tech-list
+		width: 265px
+		border-radius: 13px
+		background-color: #2095EB
+		padding: 20px
+		position: absolute
+		top: 194px
+		left: 50%
+		z-index: 12
+		margin-left: -265px - 290px + 163px
+		transform: rotate(10.89deg)
+		ul
+			li
+				list-style-position: inside
+				font-style: normal
+				font-weight: 500
+				font-size: 16px
+				line-height: 130%
+				color: #FFFFFF
+
+	.bitrix-img
+		width: 953px
+		height: auto
+		position: absolute
+		top: 157px
+		left: 50%
+		margin-left: -452px
+	.boost
+		width: 430px
+		border-radius: 500px
+		background-color: #2095EB
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 30px
+		position: absolute
+		z-index: 10
+		top: 125px
+		left: 50%
+		margin-left: -430px + 430px + 21px
+		transform: rotate(19.85deg)
+		&__title
+			font-style: normal
+			font-weight: 400
+			font-size: 32px
+			line-height: 1
+			color: #FFFFFF
+		&__val
+			font-style: normal
+			font-weight: 500
+			font-size: 154px
+			line-height: .85
+			color: #FFFFFF
+
+
+
+.section_promo
+	padding-bottom: 354px
+	padding-top: 279px
+
+
+.section_features
+	.heading_md
+		margin-bottom: 110px
+
+.section_cta
+	.heading-block_2
+		margin-left: 438px
+	.heading-block_3
+		margin-left: 200px
+		margin-bottom: 40px
+
+.section_load
+	.heading_md
+		margin-bottom: 32px
+	.line-block
+		margin-bottom: 24px
+		&:last-child
+			margin-bottom: 0
+	.row-content
+		margin-top: 60px
+
+	img
+		max-width: 100%
+		height: auto
+		margin-top: 32px
+
+.section_form
+	.heading_md
+		margin-bottom: 32px
+		color: #FFFFFF
+
+	.form
+		border-radius: 26px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		background-image: url(../img/form.jpg)
+		padding-bottom: 75px
+		padding-top: 80px
+		padding-left: 40px
+		padding-right: 40px
+
+
+.section_product
+	padding-bottom: 0
+	.heading_md
+		margin-bottom: 32px
+	img
+		max-width: 100%
+		height: auto
+	.row-content
+		margin-top: 50px
+		.btn
+			margin-top: 16px
+		.col-text
+			padding-top: 35px
+
+.footer
+	padding-top: 32px
+	padding-bottom: 112px
+	.copyright
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 130%
+		color: #303844
+	a.back
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 130%
+		color: #303844
+		margin-left: 15px
+	.btn
+		display: inline-block
+	&__right
+		text-align: right
+	
+	
+@import "media" // Always at the end
