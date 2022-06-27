@@ -72,6 +72,15 @@ $gutter: $grid-gutter-width
         background-color: #2095EB
         color: #fff
 
+
+.wrapper
+    position: relative
+    overflow-x: hidden
+    width: 100%
+
+a.btn
+    text-decoration: none
+
 .section
    p
         font-style: normal
@@ -94,6 +103,8 @@ $gutter: $grid-gutter-width
     line-height: 1.3
     border-radius: 26px
     padding: 60px 50px
+    p
+        color: #fff
     .heading
         color: #fff
         margin-bottom: 32px
@@ -258,11 +269,10 @@ $gutter: $grid-gutter-width
 
 .popup
     z-index: 1001
-    position: fixed
-    top: 50%
+    position: absolute
     display: none
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translateX(-50%)
     width: 820px
     border-radius: 32px
     background-color: #fff
