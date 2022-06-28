@@ -60,18 +60,21 @@ $gutter: $grid-gutter-width
     font-style: normal
     font-weight: 600
     font-size: 16px
-    color: #303844
+    color: #303844 !important
     background-color: #fff
     border-radius: 30px
     border: 0
     cursor: pointer
     height: 50px
+    transition: .3s ease
     &_accent
         background-color: $accent
     &_primary
-        background-color: #2095EB
-        color: #fff
+        background-color: #2095EB 
+        color: #fff !important
 
+    &:hover
+        opacity: .7
 
 .wrapper
     position: relative
@@ -80,6 +83,7 @@ $gutter: $grid-gutter-width
 
 a.btn
     text-decoration: none
+    line-height: 50px
 
 .section
    p
