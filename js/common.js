@@ -23,6 +23,8 @@ $(function() {
 		});
 	});
 
+    $('.form__input_tel').inputmask("+7 (999) 999 99 99");
+
 
 	$('.overlay').on('click', function() {
 		var pop = $(this).data('popup');
