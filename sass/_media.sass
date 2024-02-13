@@ -152,6 +152,35 @@
 
     .wrapper
         padding-top: 70px
+    
+    main
+        .breadcrumbs
+            margin-top: 20px
+        h1
+            margin-top: 40px
+        padding-bottom: 40px
+
+
+    .news__img
+        margin-bottom: 20px !important
+    .news__title
+        font-size: 18px
+        padding-right: 0
+        &:after
+            display: none
+    .news__content
+        margin-top: 8px
+        font-size: 16px
+
+    .typo
+        p
+            font-size: 16px
+        ul, ol
+            li
+                font-size: 16px
+        h2
+            font-size: 24px
+
 // ≥768px
 +media-breakpoint-down(sm)
     .heading
@@ -222,6 +251,21 @@
     .section_form 
         .form
             padding: 45px 20px
+
+    .cta
+        flex-direction: column
+        &__btn
+            margin-top: 20px
+
+    .typo 
+        .quote
+            padding-top: 30px
+            padding-bottom: 30px
+            font-size: 20px
+            padding-left: 30px
+            padding-right: 120px
+            &:after
+                right: 30px
 // ≥576px
 +media-breakpoint-down(xs)
     .section_first
@@ -249,6 +293,14 @@
             margin-right: -15px
         .desktop
             display: none 
+
+    .typo 
+        .quote
+            font-size: 18px
+            &__author
+                margin-top: 20px
+                font-size: 16px
+
 /*==========  Mobile First  ==========*/
 
 // ≤576px
